@@ -19,14 +19,27 @@ Route::post('/salva-conta', function (Request $request) {
     $user->email = $request->email;
     $user->password = $request->password;
     $user->save();
-    //teste
-    //teste
-    //teste2
-    //teste2
+
 
     return "Usuario salvo com sucesso";
 
 })->name('salva-conta');
+
+
+
+
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
+
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard')->middleware('auth');
+
+
+
+
 
 
 
