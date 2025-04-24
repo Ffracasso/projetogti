@@ -21,7 +21,7 @@ Route::post('/salva-conta', function (Request $request) {
     $user->save();
 
 
-    return redirect()->intended('dashboard');
+    return redirect()->intended('login');
 
 })->name('salva-conta');
 

@@ -28,17 +28,17 @@
             border-radius: 5px;
         }
         .auth-links a:hover {
-            background: #0056b3;
+            background: #1979de;
         }
     </style>
 </head>
 <body>
     <h1>Bem-vindo ao site</h1>
-    <p>Site placeholder para login e criação de conta</p>
+    <p>logado com sucesso</p>
 
     <div class="auth-links">
-        <a href="login">Login</a>
-        <a href="criar-conta">Criar Conta</a>
+
+        <a href="criar-conta">Criar nova Conta</a>
     </div>
 </body>
 </html>
