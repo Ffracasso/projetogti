@@ -1,5 +1,7 @@
 @vite(['resources/css/app.css','resources/js/app.js'])
 
+<x-topo></x-topo>
+
 <form action="{{route('salva-conta')}}" method="POST" class="space-y-8">
     @csrf
 
