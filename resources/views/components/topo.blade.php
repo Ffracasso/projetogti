@@ -5,7 +5,7 @@
 <header>
     <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-            <a href="https://www.fatectatui.edu.br/site4/index.php" class="flex items-center">
+            <a href="https://www.fatectatui.edu.br/site4/index.php" target="_blank" class="flex items-center">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf6Tu5Uk894gPZ-1DFm4Psa4trF4ZmYLfLPg&s" class="mr-3 w-26 " alt="Flowbite Logo" />
                 <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Curso GTI</span>
             </a>
