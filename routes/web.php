@@ -12,6 +12,11 @@ Route::get('/criar-conta', function () {
     return view('criar-conta');
 });
 
+
+Route::get('/cadastra-equipe', function () {
+    return view('cadastra-equipe');
+});
+
 Route::post('/salva-conta', function (Request $request) {
    // dd($request);
     $user = new User();
