@@ -18,7 +18,7 @@
                   <p class="my-4">se você quer seguir na area fortemente recomendo"</p>
               </blockquote>
               <figcaption class="flex justify-center items-center space-x-3">
-                  <img class="w-9 h-9 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
+                  <img class="w-25 h-25 rounded-full" src="https://i0.wp.com/assets.b9.com.br/wp-content/uploads/2018/10/venomb9.jpg?fit=1280%2C720&ssl=1" alt="profile picture">
                   <div class="space-y-0.5 font-medium dark:text-white text-left">
                       <div>Fernando Fracasso</div>
                       <div class="text-sm font-light text-gray-500 dark:text-gray-400">Aluno do 4° semestre de GTI</div>
@@ -27,14 +27,14 @@
           </figure>
           <figure class="flex flex-col justify-center items-center p-8 text-center bg-gray-50 border-b border-gray-200 md:p-12 dark:bg-gray-800 dark:border-gray-700">
               <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
-                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Conhecimento paa diversas áreas</h3>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Conhecimento em diversas áreas</h3>
                   <p class="my-4">"O curso nã fornece apenas conhecimento para quem quer seguir na área de gestão, mas tambem oferece conhecimento para uma variedade de áreas ja que tudo em nossa vida é baseado em gestão e atualmente tudo é fortemente ligado ao GTI.</p>
                   <p class="my-4">Meu amprego atualna área atual na empresa XYZ realizo atividades na área de produção e design de produtos"</p>
               </blockquote>
               <figcaption class="flex justify-center items-center space-x-3">
-                  <img class="w-9 h-9 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png" alt="profile picture">
+                  <img class="w-25 h-25 rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkPAYpADszbogR_EsVNiCwH-gZfha9adXJfg&s" alt="profile picture">
                   <div class="space-y-0.5 font-medium dark:text-white text-left">
-                      <div>Roberta Casas</div>
+                      <div>Mulher Maravilha</div>
                       <div class="text-sm font-light text-gray-500 dark:text-gray-400">Lead designer at Dropbox</div>
                   </div>
               </figcaption>
@@ -47,9 +47,9 @@
                   <p class="my-4">Aesthetically, the well designed components are beautiful and will undoubtedly level up your next application."</p>
               </blockquote>
               <figcaption class="flex justify-center items-center space-x-3">
-                  <img class="w-9 h-9 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="profile picture">
+                  <img class="w-25 h-25 rounded-full" src="https://rollingstone.com.br/media/uploads/thor-vingadoresultimato-reproducao-marvel.jpg" alt="profile picture">
                   <div class="space-y-0.5 font-medium dark:text-white text-left">
-                      <div>Jese Leos</div>
+                      <div>Thor</div>
                       <div class="text-sm font-light text-gray-500 dark:text-gray-400">Software Engineer at Facebook</div>
                   </div>
               </figcaption>
@@ -61,9 +61,9 @@
                   <p class="my-4">You have many examples that can be used to create a fast prototype for your team."</p>
               </blockquote>
               <figcaption class="flex justify-center items-center space-x-3">
-                  <img class="w-9 h-9 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture">
+                  <img class="w-25 h-25 rounded-full" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSguiiMClSNVZgpclQUkI2eTuyWH57lLpehBA&s" alt="profile picture">
                   <div class="space-y-0.5 font-medium dark:text-white text-left">
-                      <div>Joseph McFall</div>
+                      <div>Tanos</div>
                       <div class="text-sm font-light text-gray-500 dark:text-gray-400">CTO at Google</div>
                   </div>
               </figcaption>

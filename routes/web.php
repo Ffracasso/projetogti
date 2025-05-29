@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\User;
+use App\Models\Equipe;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -15,7 +16,7 @@ Route::get('/criar-conta', function () {
 
 Route::get('/cadastra-equipe', function () {
     return view('cadastra-equipe');
-});
+})->name('cadastra-equipe')->middleware('auth');
 
 Route::post('/salva-conta', function (Request $request) {
    // dd($request);
@@ -31,11 +32,26 @@ Route::post('/salva-conta', function (Request $request) {
 })->name('salva-conta');
 
 
+Route::post('/salva-equipe', function (Request $request) {
+   // dd($request);
+    $equipe = new Equipe();
+    $equipe->nome = $request->name;
+    $equipe->email = $request->email;
+    $equipe->formacao = $request->formacao;
+    $equipe->experiencia = $request->experiencia;
+    $equipe->save();
+
+
+    return redirect(route('cadastra-equipe'));
+
+})->name('salva-equipe');
+
 
 
 Route::get('/login', function () {
     return view('login');
 })->name('login');
+
 
 
 Route::post('/logar', function (Request $request) {
@@ -63,20 +79,10 @@ Route::get('/dashboard', function () {
 
 
 
-
-
-
-
-Route::get('/teste', function () {
-    return "O código foi testado";
-});
-
-Route::get('/usuario/{nome}', function ($nome) {
-    return "O usuário atual é: ".$nome;
-});
-
-Route::get('/soma/{num1}/{num2}', function ($num1, $num2) {
-    return "A soma é: ". $num1 + $num2;
-});
+Route::get('/logout', function (Request $request) {
+    $request->session()->regenerate();
+    Auth::logout();
+    return redirect()->route('inicio');
+})->name('logout');
 
 
