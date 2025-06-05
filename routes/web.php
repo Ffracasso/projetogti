@@ -1,5 +1,6 @@
 <?php
 
+
 use App\Models\User;
 use App\Models\Equipe;
 use Illuminate\Http\Request;
@@ -17,6 +18,10 @@ Route::get('/criar-conta', function () {
 Route::get('/cadastra-equipe', function () {
     return view('cadastra-equipe');
 })->name('cadastra-equipe')->middleware('auth');
+
+
+
+
 
 Route::post('/salva-conta', function (Request $request) {
    // dd($request);
@@ -54,6 +59,7 @@ Route::get('/login', function () {
 
 
 
+
 Route::post('/logar', function (Request $request) {
     $credentials = $request->validate([
         'email' => ['required', 'email'],
@@ -82,7 +88,11 @@ Route::get('/dashboard', function () {
 Route::get('/logout', function (Request $request) {
     $request->session()->regenerate();
     Auth::logout();
-    return redirect()->route('inicio');
+    return redirect('/');
 })->name('logout');
 
 
+Route::get('/lista-equipe', function () {
+    $equipe=Equipe::all();
+    return view('lista-equipe', compact('equipe'));
+})->name('lista-equipe');
