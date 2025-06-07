@@ -10,9 +10,15 @@ Route::get('/', function () {
     return view('inicio');
 })->name('inicio');
 
+
+
+
 Route::get('/criar-conta', function () {
     return view('criar-conta');
 });
+
+
+
 
 
 Route::get('/cadastra-equipe', function () {
@@ -57,6 +63,18 @@ Route::get('/login', function () {
     return view('login');
 })->name('login');
 
+
+Route::get('/sobre', function () {
+    return view('sobre');
+})->name('sobre');
+
+Route::get('/recursos', function () {
+    return view('recursos');
+})->name('recursos');
+
+Route::get('/fale-conosco', function () {
+    return view('fale-conosco');
+})->name('fale-conosco');
 
 
 
