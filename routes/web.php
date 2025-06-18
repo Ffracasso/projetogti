@@ -2,6 +2,7 @@
 
 
 use App\Models\User;
+use App\Models\Aula;
 use App\Models\Equipe;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -11,6 +12,14 @@ Route::get('/', function () {
 })->name('inicio');
 
 
+Route::get('/aula', function () {
+    return view('aula');
+})->name('aula');
+
+
+Route::get('/cadasra-aula', function () {
+    return view('cadastra-aula');
+})->name('cadastra-aula')->middleware('auth');
 
 
 Route::get('/criar-conta', function () {
@@ -42,6 +51,21 @@ Route::post('/salva-conta', function (Request $request) {
 
 })->name('salva-conta');
 
+
+
+Route::post('/salva-aula', function (Request $request) {
+   // dd($request);
+    $aula = new Aula();
+    $aula->name = $request->name;
+    $aula->email = $request->email;
+    $aula->curso = $request->curso;
+    $aula->semestre = $request->semestre;
+    $aula->save();
+
+
+    return redirect()->intended('cadastra-aula');
+
+})->name('salva-aula');
 
 Route::post('/salva-equipe', function (Request $request) {
    // dd($request);
@@ -114,3 +138,9 @@ Route::get('/lista-equipe', function () {
     $equipe=Equipe::all();
     return view('lista-equipe', compact('equipe'));
 })->name('lista-equipe');
+
+
+Route::get('/aula', function () {
+    $equipe=Equipe::all();
+    return view('aula', compact('aula'));
+})->name('aula');
