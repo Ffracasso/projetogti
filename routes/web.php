@@ -17,7 +17,7 @@ Route::get('/aula', function () {
 })->name('aula');
 
 
-Route::get('/cadasra-aula', function () {
+Route::get('/cadastra-aula', function () {
     return view('cadastra-aula');
 })->name('cadastra-aula')->middleware('auth');
 
@@ -56,14 +56,14 @@ Route::post('/salva-conta', function (Request $request) {
 Route::post('/salva-aula', function (Request $request) {
    // dd($request);
     $aula = new Aula();
-    $aula->name = $request->name;
+    $aula->nome = $request->nome;
     $aula->email = $request->email;
     $aula->curso = $request->curso;
     $aula->semestre = $request->semestre;
     $aula->save();
 
 
-    return redirect()->intended('cadastra-aula');
+    return redirect(route('cadastra-aula'));
 
 })->name('salva-aula');
 
@@ -140,7 +140,8 @@ Route::get('/lista-equipe', function () {
 })->name('lista-equipe');
 
 
+
 Route::get('/aula', function () {
-    $equipe=Equipe::all();
+    $aula=Aula::all();
     return view('aula', compact('aula'));
 })->name('aula');
